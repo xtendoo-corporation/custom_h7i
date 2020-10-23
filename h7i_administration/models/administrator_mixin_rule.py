@@ -15,11 +15,11 @@ class AdministratorMixinRule(models.Model):
     @api.one
     def _is_comercial(self):
         self.is_comercial = self.env["res.users"].has_group(
-                "zoopet_administration.comercial_group"
+                "h7i_administration.comercial_group"
             )
 
     @api.model
     def _get_default_comercial(self):
         return self.env["res.users"].has_group(
-                "zoopet_administration.comercial_group"
+                "h7i_administration.comercial_group"
             )

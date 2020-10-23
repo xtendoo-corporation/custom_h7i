@@ -2,7 +2,7 @@
     'name': 'H7I Administration',
     'summary': """Administration settings for Hierros 7 Islas""",
     'version': '12.0.1.0.0',
-    'description': """Administration settings for Zoopet""",
+    'description': """Administration settings for h7i""",
     'author': 'Dani Domínguez',
     'company': 'Xtendoo',
     'website': 'http://xtendoo.es',

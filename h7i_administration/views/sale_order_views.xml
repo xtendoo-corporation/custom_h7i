@@ -3,15 +3,16 @@
     <data>
 
     <!-- Boton create Invoice-->
-        <record id="sale_order_view_form" model="ir.ui.view">
-            <field name="name">sale.order.form</field>
+        <record id="h7i_administration.sale_order_view_form_inherit" model="ir.ui.view">
+            <field name="name">sale.order.form.inherit</field>
             <field name="model">sale.order</field>
             <field name="inherit_id" ref="sale.view_order_form"/>
             <field name="arch" type="xml">
-             <xpath expr="//field[@name='pricelist_id']" position="replace">
-                <field name="is_comercial" insivible="1"/>
-                <field name="pricelist_id" groups="product.group_sale_pricelist" attrs="{'readonly': [('is_comercail', '=',True)]}"/>/>
-
+                <xpath expr="//field[@name='pricelist_id']" position="replace">
+                    <field name="is_comercial" insivible="1"/>
+                    <field name="pricelist_id" groups="product.group_sale_pricelist" attrs="{'readonly': [('is_comercial', '=',True)]}"/>
+                </xpath>
+            </field>
         </record>
     <!-- Fin boton create Invoice -->
     </data>
